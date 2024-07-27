@@ -41,14 +41,14 @@ async function populateRelated(){
          <div class="col">
             <div class="blogs-cards">
                 <div class="blogs-thiumbnail">
-                    <a href="single-post/single-post-page/index.html?id=${blog.id}"><img src="${blog.featImg}" alt=""></a>
+                    <a href="?id=${blog.id}"><img src="${blog.featImg}" alt=""></a>
                 </div>
                 <div class="blogs-content-container">
                     <p>
                         <span class="category">PROPNEX PICKS</span>
                     </p>
                     <div class="post-title">
-                        <h4 class="title"><a href="single-post/single-post-page/index.html?id=${blog.id}">${blog.heading}e</a></h4>
+                        <h4 class="title"><a href="?id=${blog.id}">${blog.heading}e</a></h4>
                     </div>
                     <p class="date">${blog.created_at.split("T")[0]}</p>
 
