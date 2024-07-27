@@ -12,14 +12,23 @@
     const content = blog.content
     const heading = blog.heading
     const createdAt = blog.created_at
+    const content_container = document.querySelector(".single-post-dull-content-wrapper")
 
     document.querySelectorAll(".single-post-title")[1].textContent = heading
-    document.querySelector(".single-post-dull-content-wrapper").innerHTML = content
+    content_container.innerHTML = content
     document.querySelector(".date").textContent = createdAt.split('T')[0];
 
     await populateRelated()
 
-  
+    const images = content_container.querySelectorAll("img")
+
+    console.log(images);
+    for (const image of images) {
+        image.style.width = "100%"
+        if(window.screen.width <=600){
+            image.style.height = "400px"
+        }
+    }
 
 
 })()
