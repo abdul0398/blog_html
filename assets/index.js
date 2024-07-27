@@ -16,14 +16,14 @@ async function populateArticles(){
             <div class="col">
                 <div class="blogs-cards">
                     <div class="blogs-thiumbnail">
-                        <a href="/single-post/single-post-page/index.html?id=${blog.id}" target="_blank"><img src="${blog.featImg}" alt=""></a>
+                        <a href="blog_html/single-post/single-post-page/?id=${blog.id}" target="_blank"><img src="${blog.featImg}" alt=""></a>
                     </div>
                     <div class="blogs-content-container">
                         <p>
                             <span class="category">Latest News Articles</span>
                         </p>
                         <div class="post-title">
-                            <h4 class="title"><a href="/single-post/single-post-page/index.html?id=${blog.id}" target="_blank">${blog.heading}</a></h4>
+                            <h4 class="title"><a href="blog_html/single-post/single-post-page/?id=${blog.id}" target="_blank">${blog.heading}</a></h4>
                         </div>
                         <p class="date">${blog.created_at.split("T")[0]}</p>
                     </div>
