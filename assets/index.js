@@ -4,7 +4,7 @@
 
 
 async function populateArticles(){
-    const response = await fetch("https://blog.jomejourney-portal.com/api/blogs/fetch");
+    const response = await fetch("https://blog.jomejourney-portal.com/api/blogs/fetch?less=true&limit=4");
     const data = await response.json()
     const {blogs} = data
     blogs.sort((a, b) => new Date(b.created_at) - new Date(a.created_at));
