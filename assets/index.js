@@ -52,6 +52,7 @@ let isCarousel;
         selectedDates = undefined;
         $("#search").val("");
         populateArticles(allBlogs);
+        startCarousel();
     });
 
     const response = await fetch("https://blog.jomejourney-portal.com/api/blogs/fetch?less=true&limit=100");
