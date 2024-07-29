@@ -22,7 +22,6 @@
 
     const images = content_container.querySelectorAll("img")
 
-    console.log(images);
     for (const image of images) {
         image.style.width = "100%"
         if(window.screen.width <=600){
@@ -64,12 +63,8 @@ async function populateRelated(){
                 </div>
             </div>
         </div>
-        `
-
-        
+        `        
     }
-
-
 }
 
 
